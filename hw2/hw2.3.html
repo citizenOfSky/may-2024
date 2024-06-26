@@ -1,3 +1,8 @@
+<!--зверстайте сторіночку вікіпедії про пітер пена-->
+<!--https://en.wikipedia.org/wiki/Peter_Pan-->
+
+<!--Без картинок, без блоків, без бокових шпальт. Лише робота з текстом-->
+<!--Додавайте відступи, використовуйте теги: <a>,  <b>, <i>, <sub>, <hr>, <h1>, <h2>. Не забудьте про text-decoration: none; ( щоб забрати підкреселення у посилань)-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,14 +12,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         a{
             text-decoration: none;
+            margin-right: 10px;
+        }
+        p{
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        .normal{
+            font-style: normal;
         }
     </style>
 </head>
 <body>
-<h1>Peter Pan</h1>
-
-
+<h1 style="margin-bottom: 0">Peter Pan</h1>
+<hr>
+<div class="flex">
+    <div>
+        <a href="#">Article</a>
+        <a href="#">Talk</a>
+    </div>
+    <div>
+        <a href="#">Read</a>
+        <a href="#">Edit</a>
+        <a href="#">View history</a>
+        <a href="#" style="margin-right: 0">Tools</a>
+    </div>
+</div>
+<hr>
+<p style="margin-top: 0">From Wikipedia, the free encyclopedia</p>
+<p style="margin-left: 25px; margin-bottom: 15px"><i>This article is about the character Peter Pan. For the original play and novel about the character, see <a href="#" class="normal">Peter and Wendy.</a>For other uses, see <a href="#">Peter Pan (disambiguation).</a></i></p>
+<p><b>Peter Pan</b> is a fictional character created by <a href="#">Scottish novelist</a>and playwright <a href="#">J. M. Barrie.</a>A free-spirited and mischievous young boy who can fly and never grows up, Peter Pan spends his never-ending childhood having adventures on the mythical island of <a href="#">Neverland</a>as the leader of the <a href="#">Lost Boys,</a>Lost Boys, interacting with <a href="#">fairies, pirates, mermaids, Native Americans,</a>and occasionally ordinary children from the world outside Neverland.</p>
+<p>Peter Pan has become a cultural icon symbolizing youthful innocence and <a href="#">escapism.</a>In addition to two distinct works by Barrie, <a href="#"><i>The Little White Bird</i></a>(1902, with chapters 13–18 published in <a href="#"><i>Peter Pan in Kensington Gardens</i></a>in 1906), and the <a href="#">West End stage</a>play <a href="#"><i>Peter Pan; or, the Boy Who Wouldn't Grow Up</i></a>(1904, which expanded into the 1911 novel <a href="#"><i>Peter and Wendy</i></a>), the character has been featured in a variety of media and merchandise, both adapting and expanding on Barrie's works. These include several films, television series and many other works.</p>
+<p>Barrie commissioned a <a href="#">statue of Peter Pan</a>by the sculptor <a href="#">George Frampton,</a>which was erected overnight in <a href="#">Kensington Gardens</a>on 30 April 1912 as a surprise to the children of London.<sup>[1]</sup> Six other statues have been cast from the original mould and displayed around the world. In 2002, Peter Pan featured on a <a href="#">series of UK postage stamps</a>issued by the <a href="#">Royal Mail</a>on the centenary of Barrie's creation of the character.<sup>[2]</sup></p>
 </body>
 </html>
