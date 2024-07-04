@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+header{
+    height: 12vh;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header div h4{
+    font-weight: 700;
+}
+header nav{
+    width: 70%;
+}
+header nav ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*padding-right: 40px;*/
+}
+header nav ul li{
+    /*margin: 40px;*/
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+main{
+    height: 88vh;
+    background-image: url("pictures/watch_mechanism.jpg");
+    background-size: cover;
+}
