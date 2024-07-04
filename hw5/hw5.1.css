@@ -7,6 +7,9 @@
     font-weight: 400;
     font-size: 20px;
 }
+.active{
+    color: white;
+}
 header{
     height: 12vh;
     background-color: goldenrod;
@@ -33,23 +36,24 @@ header nav ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /*padding-right: 40px;*/
 }
-header nav ul li{
-    /*margin: 40px;*/
-}
-header nav ul li a{
+header nav ul a{
     text-decoration: none;
     font-size: 25px;
     color: black;
+    transition: 0.8s;
+}
+header nav ul a:hover{
+    color: white;
+    transition: 0.4s;
 }
 main{
     height: 88vh;
-    background-image: url("pictures/watch_mechanism.jpg");
+    background-image: url("pictures/watch_on_black.jpg");
     background-size: cover;
     color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 main ul{
@@ -57,4 +61,29 @@ main ul{
 }
 main ul li{
     font-size: 25px;
+}
+main div{
+    width: 30vw;
+    height: 88vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+main div button{
+    width: 30%;
+    height: 6%;
+    background-color: silver;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+main div button:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+.contact{
+    height: 88vh;
+    background-image: url("pictures/watch_mechanism.jpg");
 }
