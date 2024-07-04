@@ -47,4 +47,14 @@ main{
     height: 88vh;
     background-image: url("pictures/watch_mechanism.jpg");
     background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+main ul{
+    margin: 20px;
+}
+main ul li{
+    font-size: 25px;
 }
