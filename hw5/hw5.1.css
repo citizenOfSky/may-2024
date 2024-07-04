@@ -8,10 +8,11 @@
     font-weight: 400;
     font-size: 20px;
 }
-.numbers{
+.address_font p{
     font-family: "Wittgenstein", serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 25px;
 }
 .active{
     color: white;
@@ -95,7 +96,4 @@ main div button:hover{
     background-size: cover;
     display: block;
     padding: 20px;
-}
-.contact p{
-    font-size: 25px;
 }
