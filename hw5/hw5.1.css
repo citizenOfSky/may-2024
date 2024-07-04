@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,11 @@
     font-family: "Baskervville SC", serif;
     font-weight: 400;
     font-size: 20px;
+}
+.numbers{
+    font-family: "Wittgenstein", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 }
 .active{
     color: white;
@@ -76,14 +82,20 @@ main div button{
     background-color: silver;
     font-size: 25px;
     border: none;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     transition: 1s;
 }
 main div button:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: 1s;
 }
 .contact{
     height: 88vh;
     background-image: url("pictures/watch_mechanism.jpg");
+    background-size: cover;
+    display: block;
+    padding: 20px;
+}
+.contact p{
+    font-size: 25px;
 }
