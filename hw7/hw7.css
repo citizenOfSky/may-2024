@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: KoHo, sans-serif;
+}
+.top{
+    height: 100vh;
+    background-image: url("images/background_top.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 1058.4px;
+    height: 392.8px;
+    display: flex;
+}
+.page_in_box{
+    width: 50%;
+    height: 100%;
+    background: #FAF9F7;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    gap: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lorem_ipsum{
+    font-size: 35px;
+    font-weight: 400;
+}
+.expression{
+    font-size: 25px;
+    font-weight: 400;
+}
+.button{
+    width: 409px;
+    height: 76px;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid rgba(156, 152, 152, 0.10);
+    background: rgba(217, 217, 217, 0.60);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.middle{
+    height: 100vh;
+    background-image: url("images/rectangle.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom{
+    height: 100vh;
+    background-image: url("images/rectangle.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container{
+    width: 453.6px;
+    height: 700px;
+    background: rgba(83, 83, 83, 0.40);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
