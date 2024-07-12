@@ -54,8 +54,17 @@
     background-image: url("images/rectangle.png");
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
+    margin-top: 105px;
+}
+.description{
+    width: 949px;
+    height: 183px;
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 105px;
 }
 .bottom{
     height: 100vh;
@@ -73,4 +82,33 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    padding-top: 25px;
+}
+.lorem{
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 32px;
+}
+.text{
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 24px;
+}
+.price{
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 62px;
+    padding-bottom: 25px;
+}
+.button_down{
+    width: 409px;
+    height: 76px;
+    color: #6B6666;
+    font-size: 35px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid rgba(156, 152, 152, 0.10);
+    background: rgba(217, 217, 217, 0.60);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
 }
