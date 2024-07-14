@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    height: 293.4vh;
+    /*background: #1E1E1E;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    width: 100vw;
+    height: 16.6vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.info{
+    width: 451px;
+    height: 60px;
+    background-color: #644C4C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+    margin-right: 51px;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    padding-right: 59px;
+}
+#order_online{
+    width: 203px;
+    height: 60px;
+    background: #B3A0CD;
+    font-family: "Bowlby One", sans-serif;
+    color: #1E1E1E;
+    font-size: 18px;
+    line-height: 96.896%; /* 17.441px */
+    text-transform: uppercase;
+    border: none;
+}
+main{
+    width: 100vw;
+    height: 250.3vh;
+    background-color: #6B6666;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+/*.box_burgers{*/
+/*    width: 100vw;*/
+/*    height: 27.8vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background-color: #3062bd;*/
+/*}*/
+.header_burgers{
+    /*width: 87.2vw;*/
+    /*height: 27.8vh;*/
+    /*width: 87.2%;*/
+    /*height: 100%;*/
+    width: 1255px;
+    height: 285px;
+    background-color: #441818;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 33px;
+
+}
+.header_burgers h1{
+    color: #E9E3DC;
+    font-size: 107px;
+    line-height: 88.896%; /* 95.198px */
+    letter-spacing: -2.142px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*.img_burgers{*/
+/*    */
+/*}*/
+.green_section{
+    width: 1340px;
+    height: 369px;
+    border-radius: 30px;
+    background: #D1EF53;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 33px;
+;
+}
+.grn_sec_left{
+    width: 533px;
+    height: 186px;
+    background-color: #B93536;
+    margin-left: 109px;
+}
+.grn_sec_left h2{
+    color: #1E1E1E;
+    font-size: 70px;
+    line-height: 88.896%; /* 62.228px */
+    letter-spacing: -1.4px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.grn_sec_right{
+    width: 533px;
+    height: 186px;
+    background-color: #02777a;
+    margin-left: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.grn_sec_right p{
+    color: #1E1E1E;
+    font-size: 24px;
+    line-height: 139.896%; /* 33.575px */
+    letter-spacing: -0.48px;
+    margin: 0;
+}
+#inter{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+#about_us{
+    width: 176px;
+    height: 60px;
+    border: 4px solid #1E1E1E;
+    background: #E9E3DC;
+    font-family: "Bowlby One", sans-serif;
+    /* DropShadow */
+    box-shadow: 8px 8px 0 0 #000;
+    color: #1E1E1E;
+    /*text-align: center;*/
+    font-size: 18px;
+    line-height: 96.896%; /* 17.441px */
+    text-transform: uppercase;
+}
+.two_pictures{
+    width: 1340px;
+    height: 753px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100vw;
+    height: 26.5vh;
+    background-color: #B93536;
+}
