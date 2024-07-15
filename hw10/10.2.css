@@ -4,10 +4,10 @@ body{
     font-family: "Bowlby One", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    height: 293.4vh;
-    /*background: #1E1E1E;*/
+    height: 327.5vh;
+    background: #1E1E1E;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -15,7 +15,7 @@ body{
 }
 header{
     width: 100vw;
-    height: 16.6vh;
+    height: 18.5vh;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -23,13 +23,11 @@ header{
 .info{
     width: 451px;
     height: 60px;
-    background-color: #644C4C;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 36px;
     margin-right: 51px;
-
 }
 nav ul{
     list-style-type: none;
@@ -46,44 +44,29 @@ nav ul a{
 #order_online{
     width: 203px;
     height: 60px;
+    border: none;
     background: #B3A0CD;
     font-family: "Bowlby One", sans-serif;
     color: #1E1E1E;
     font-size: 18px;
     line-height: 96.896%; /* 17.441px */
     text-transform: uppercase;
-    border: none;
 }
 main{
     width: 100vw;
-    height: 250.3vh;
-    background-color: #6B6666;
+    height: 272.5vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
-/*.box_burgers{*/
-/*    width: 100vw;*/
-/*    height: 27.8vh;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    background-color: #3062bd;*/
-/*}*/
 .header_burgers{
-    /*width: 87.2vw;*/
-    /*height: 27.8vh;*/
-    /*width: 87.2%;*/
-    /*height: 100%;*/
     width: 1255px;
     height: 285px;
-    background-color: #441818;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 33px;
-
 }
 .header_burgers h1{
     color: #E9E3DC;
@@ -93,9 +76,6 @@ main{
     text-transform: uppercase;
     text-align: center;
 }
-/*.img_burgers{*/
-/*    */
-/*}*/
 .green_section{
     width: 1340px;
     height: 369px;
@@ -105,12 +85,10 @@ main{
     justify-content: flex-start;
     align-items: center;
     margin-top: 33px;
-;
 }
 .grn_sec_left{
     width: 533px;
     height: 186px;
-    background-color: #B93536;
     margin-left: 109px;
 }
 .grn_sec_left h2{
@@ -124,7 +102,6 @@ main{
 .grn_sec_right{
     width: 533px;
     height: 186px;
-    background-color: #02777a;
     margin-left: 28px;
     display: flex;
     justify-content: space-between;
@@ -151,7 +128,6 @@ main{
     /* DropShadow */
     box-shadow: 8px 8px 0 0 #000;
     color: #1E1E1E;
-    /*text-align: center;*/
     font-size: 18px;
     line-height: 96.896%; /* 17.441px */
     text-transform: uppercase;
@@ -162,21 +138,49 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.pctr_left{
+    width: 650px;
+    height: 753px;
+}
+.pctr_right{
+    width: 650px;
+    height: 753px;
+}
 footer{
     width: 100vw;
-    height: 26.5vh;
-    background-color: #B93536;
+    height: 36.5vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.call{
+    width: 895px;
+    height: 142px;
+    margin-top: 64px;
+}
+.call h2{
+    color: #E9E3DC;
+    text-align: center;
+    font-size: 70px;
+    line-height: 101.896%; /* 71.328px */
+    text-transform: uppercase;
+    margin: 0;
+}
+#get_started{
+    width: 196px;
+    height: 60px;
+    border: none;
+    background: #D1EF53;
+    color: #1E1E1E;
+    text-align: center;
+    font-family: "Bowlby One", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 96.896%; /* 17.441px */
+    text-transform: uppercase;
+    margin-top: 33px;
 }
