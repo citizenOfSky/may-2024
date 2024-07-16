@@ -54,7 +54,7 @@ nav ul a{
 }
 main{
     width: 100vw;
-    height: 272.5vh;
+    height: 278.5vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -151,7 +151,7 @@ main{
 }
 footer{
     width: 100vw;
-    height: 36.5vh;
+    height: 30.5vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -160,7 +160,6 @@ footer{
 .call{
     width: 895px;
     height: 142px;
-    margin-top: 64px;
 }
 .call h2{
     color: #E9E3DC;
