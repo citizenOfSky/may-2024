@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .red{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            animation: red 3s ease infinite;
+        }
+        .blue{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: blue;
+            animation: blue 3s ease infinite;
+        }
+        .yellow{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: yellow;
+            animation: yellow 3s ease infinite;
+        }
+        .green{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: green;
+        }
+        .flex{
+            width: 200px;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @keyframes red{
+            0%{
+                transform: translate(180px);
+            }
+            50%{
+                transform: translate(0);
+            }
+            100%{
+                transform: translateX(180px);
+            }
+        }
+        @keyframes blue{
+            0%{
+                transform: translate(120px);
+            }
+            50%{
+                transform: translate(0);
+            }
+            100%{
+                transform: translateX(120px);
+            }
+        }
+        @keyframes yellow{
+            0%{
+                transform: translate(60px);
+            }
+            50%{
+                transform: translate(0);
+            }
+            100%{
+                transform: translateX(60px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
