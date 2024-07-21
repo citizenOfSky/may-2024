@@ -21,27 +21,28 @@
             height: 20px;
             border-radius: 50%;
             background-color: red;
-            animation: red 3s ease infinite;
+            animation: red 2s ease infinite;
         }
         .blue{
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: blue;
-            animation: blue 3s ease infinite;
+            background-color: #00a6ff;
+            animation: blue 2s ease infinite;
         }
         .yellow{
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: yellow;
-            animation: yellow 3s ease infinite;
+            background-color: #ffae00;
+            animation: yellow 2s ease infinite;
         }
         .green{
             width: 20px;
             height: 20px;
             border-radius: 50%;
             background-color: green;
+            animation: green 2s ease infinite;
         }
         .flex{
             width: 200px;
@@ -56,6 +57,7 @@
             }
             50%{
                 transform: translate(0);
+                background-color: green;
             }
             100%{
                 transform: translateX(180px);
@@ -67,6 +69,7 @@
             }
             50%{
                 transform: translate(0);
+                background-color: #ffae00;
             }
             100%{
                 transform: translateX(120px);
@@ -78,9 +81,22 @@
             }
             50%{
                 transform: translate(0);
+                background-color: #00a6ff;
             }
             100%{
                 transform: translateX(60px);
+            }
+        }
+        @keyframes green{
+            0%{
+                transform: translate(0);
+            }
+            50%{
+                transform: translate(0);
+                background-color: red;
+            }
+            100%{
+                transform: translateX(0);
             }
         }
     </style>
