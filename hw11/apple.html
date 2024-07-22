@@ -13,28 +13,14 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #4b6917;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        .flex{
-            margin: 0 auto 0 auto;
-            padding: 0;
-            width: 1039px;
-            background-color: #D1EF53;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: column;
         }
         nav{
-            width: 1039px;
+            width: 100vw;
             height: 44px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #937575;
+            background: #FFF;
         }
         nav ul{
             width: 996px;
@@ -44,7 +30,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: red;
             list-style-type: none;
         }
         nav ul li a{
@@ -53,12 +38,14 @@
             color: rgba(0, 0, 0, 0.8);
         }
         header{
-            width: 1039px;
+            width: 100vw;
             height: 116px;
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            background-color: #3062bd;
+            background: rgba(245, 245, 247, 0.60);
+            backdrop-filter: blur(10px);
+            animation: left 0.3s ease-out 1;
         }
         header ul{
             box-sizing: border-box;
@@ -86,18 +73,77 @@
             color: #1D1D1F;
             margin-top: 5px;
         }
-        h2{
+        .tv_home{
+            width: 100vw;
+            background: #F5F5F7;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 78px;
+        }
+        section img{
+            animation: down 2.5s ease 1;
+        }
+        .tv_home h2{
             color: #1D1D1F;
             text-align: center;
             font-size: 96px;
             font-weight: 700;
             letter-spacing: -1.44px;
+            margin-top: 60px;
+            margin-bottom: 0;
+            animation: top 2.5s ease 1
         }
-
+        .tv_home p{
+            width: 976px;
+            height: 112px;
+            color: #86868B;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 28px; /* 129.855% */
+            letter-spacing: 0.216px;
+            margin-top: 45px;
+            animation: top 2.5s ease 1
+        }
+        @keyframes left{
+            from{
+                transform: translateX(250px);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+        @keyframes down{
+            0%{
+                opacity: 0;
+            }
+            20%{
+                opacity: 0;
+                transform: translateY(-50px)scale(1.15);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0)scale(1);
+            }
+        }
+        @keyframes top{
+            0%{
+                opacity: 0;
+            }
+            20%{
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="flex">
         <nav>
             <ul>
                 <li>
@@ -188,6 +234,5 @@
                 Siri. All with the security and privacy of Apple.
             </p>
         </section>
-    </div>
 </body>
 </html>
