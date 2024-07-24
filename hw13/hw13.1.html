@@ -16,6 +16,8 @@
             font-family: "Roboto", sans-serif;
             width: 100vw;
             height: 600px;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.15);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,12 +37,89 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #ffae00;
         }
+        .icon{
+            font-size: 25px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .icon img{
+            width: 55px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .menu ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+        }
+        .menu ul li{
+            margin-left: 22px;
+        }
+        .menu ul a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .registration{
+            width: 140px;
+            height: 55px;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            font-weight: 600;
 
-
-
-
+        }
+        .general{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center{
+            width: 500px;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .field{
+            width: 500px;
+            height: 55px;
+            background-color: white;
+            border-radius: 4px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 8px;
+        }
+        .photo{
+            height: 40px;
+            width: 80px;
+            font-weight: 600;
+            border-radius: 4px;
+            background-color: rgba(169, 169, 169, 0.37);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .search{
+            border: none;
+            background-color: white;
+            margin-left: 140px;
+        }
+        input[type="search"]
+        {
+            width: 200px;
+            border: none;
+            margin-left: 22px;
+        }
         video{
             width: 100%;
             height: 600px;
@@ -49,8 +128,6 @@
             z-index: -1;
             top: 0;
         }
-
-
     </style>
 </head>
 <body>
@@ -59,28 +136,28 @@
         <div class="icon">
             <img src="media/pexels.png" alt="icon">
             <span>Pexels</span>
-
         </div>
-        <div>
+        <div class="menu">
             <ul>
                 <li><a href="">Пошук</a></li>
                 <li><a href="">Ліцензія</a></li>
                 <li><a href="">Завантаження</a></li>
                 <li><a href=""></a>...</li>
-                <li><button>Реєстрація</button></li>
+                <li><button class="registration">Реєстрація</button></li>
             </ul>
-
         </div>
     </nav>
-    <section>
-        <h2>Найкращі безкоштовні стокові відео від спільноти Pexels.</h2>
-        <div class="search">
-            <button><img src="media/photo_camera.svg" alt="">Фото</button>
-            <input type="text">
-            <button><img src="media/search.svg" alt=""></button>
+    <section class="general">
+        <div class="center">
+            <h2>Найкращі безкоштовні стокові відео від спільноти Pexels.</h2>
+            <form class="field">
+                <button class="photo"><img src="media/photo_camera.svg" alt="">Фото</button>
+                <label for="search"></label>
+                <input type="search" name="search" id="search" placeholder="Пошук безкоштовних відео">
+                <button class="search"><img src="media/search.svg" alt=""></button>
+            </form>
         </div>
     </section>
-
 </div>
 <video src="media/nature.mp4" loop autoplay muted></video>
 </body>
