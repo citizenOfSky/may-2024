@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Roboto", sans-serif;
+            width: 100vw;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .auto{
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffae00;
+        }
+
+
+
+
+        video{
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="auto">
+    <nav >
+        <div class="icon">
+            <img src="media/pexels.png" alt="icon">
+            <span>Pexels</span>
+
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Пошук</a></li>
+                <li><a href="">Ліцензія</a></li>
+                <li><a href="">Завантаження</a></li>
+                <li><a href=""></a>...</li>
+                <li><button>Реєстрація</button></li>
+            </ul>
+
+        </div>
+    </nav>
+    <section>
+        <h2>Найкращі безкоштовні стокові відео від спільноти Pexels.</h2>
+        <div class="search">
+            <button><img src="media/photo_camera.svg" alt="">Фото</button>
+            <input type="text">
+            <button><img src="media/search.svg" alt=""></button>
+        </div>
+    </section>
+
+</div>
+<video src="media/nature.mp4" loop autoplay muted></video>
+</body>
+</html>
