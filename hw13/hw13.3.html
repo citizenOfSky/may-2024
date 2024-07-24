@@ -80,23 +80,29 @@
       flex-direction: column;
     }
     .flex{
-      width: 1367px;
-      height: 331px;
+      /*box-sizing: border-box;*/
+      /*width: 1367px;*/
+      height: 371px;
+      gap: 128px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #ffae00;
       position: relative;
     }
     .card{
-      width: 285px;
+      /*box-sizing: border-box;*/
+      /*width: 285px;*/
       height: 331px;
+      border-radius: 32px;
+      /* 200 */
+      box-shadow: 0 4px 20px 0 rgba(139, 139, 139, 0.10);
+      gap: 20px;
+      padding: 20px;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       flex-direction: column;
       position: relative;
-      background-color: #3062bd;
     }
     .label{
       width: 165px;
@@ -105,6 +111,25 @@
       background-color: #dddddd;
       position: absolute;
       top: -30px;
+    }
+    .showing_CTAs>p{
+      width: 472px;
+      height: 116px;
+      color: #142823;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 212px;
+      margin-bottom: 57px;
+    }
+    .card p{
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .card span{
+      color: #106FDF;
+      font-size: 24px;
+      font-weight: 700;
     }
   </style>
 
@@ -143,30 +168,27 @@
 </main>
 
 <section class="showing_CTAs">
-  <p>Showing CTAs on hover interaction</p>
+  <p>Showing CTAs <br> on hover interaction</p>
   <div class="flex">
     <div class="card">
       <img src="pictures/frame_339.png" alt="sneakers">
       <p>Nike Running - Neon</p>
       <span>$ 210.00</span>
-      <div>
-        <img class="label" src="pictures/label.png" alt="label">
-      </div>
+      <img class="label" src="pictures/label.png" alt="label">
     </div>
     <div class="card">
       <img src="pictures/frame_340.png" alt="sneakers">
       <p>Nike Running - Neon</p>
-      <span>$ 210.00</span>
+      <span style="color: #DD152D">$ 210.00</span>
     </div>
     <div class="card">
       <img src="pictures/frame_341.png" alt="sneakers">
       <p>Nike Running - Neon</p>
       <span>$ 210.00</span>
-      <div>
-        <img class="label" src="pictures/label.png" alt="label">
-      </div>
+      <img class="label" src="pictures/label.png" alt="label">
     </div>
   </div>
 </section>
+
 </body>
 </html>
