@@ -24,7 +24,6 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            background-color: #ffae00;
         }
         header{
             width: 100%;
@@ -47,6 +46,7 @@
         }
         nav>ul>li{
             gap: 40px;
+            position: relative;
         }
         li{
             list-style-type: none;
@@ -57,8 +57,31 @@
             font-family: "Taviraj", serif;
             font-size: 20px;
         }
-        nav>ul>li>ul{
-            padding: 15px 41px 23px 20px;
+        nav>ul>li>a{
+            display: block;
+        }
+        .dropdown{
+            width: 160px;
+            height: 107px;
+            background: rgba(255, 255, 255, 0.70);
+            display: none;
+            position: absolute;
+            /*padding: 15px 41px 23px 20px;*/
+            margin-top: 0;
+        }
+        .dropdown a{
+            width: 99px;
+            line-height: 23px;
+            margin-left: 20px;
+        }
+        .dropdown li:first-child{
+            margin-top: 20px;
+        }
+        nav ul li:hover .dropdown{
+            display: block;
+        }
+        .dropdown a:hover{
+            background: orange;
         }
         .top{
             width: 1110px;
@@ -136,6 +159,14 @@
             width: 255px;
             height: 278px;
             background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .card img{
+            position: absolute;
+            top: -41px;
         }
         .card p{
             color: #333;
@@ -143,15 +174,26 @@
             font-size: 24px;
             font-weight: 500;
             line-height: 32px; /* 133.333% */
-            margin-left: 24px;
-            margin-bottom: 33px;
+            /*margin-left: 24px;*/
+            /*margin-bottom: 33px;*/
+            position: absolute;
+            bottom: 34px;
+            left: 24px;
         }
         .bottom{
             width: 100%;
+            height: 878px;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
+            position: relative;
+        }
+        .bottom img{
+            position: absolute;
+            top: 215px;
+            right: 87px;
+            bottom: 179px;
         }
         .bottom p:nth-child(1){
             color: #333;
@@ -192,11 +234,11 @@
                 <li><a href="#">Watches</a></li>
                 <li><a href="#">Eyewear</a></li>
                 <li><a href="#">Accessories</a>
-<!--                    <ul>-->
-<!--                        <li><a href="#">Fashion</a></li>-->
-<!--                        <li><a href="#">Electronic</a></li>-->
-<!--                        <li><a href="#">Home</a></li>-->
-<!--                    </ul>-->
+                    <ul class="dropdown">
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Electronic</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
                 </li>
                 <li><a href="#">News</a></li>
             </ul>
