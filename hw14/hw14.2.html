@@ -6,31 +6,372 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         *{
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         body{
             width: 100vw;
-        }
-        .tape{
-            width: 1170px;
-            box-sizing: border-box;
-            background-color: #ffae00;
+            font-family: "Inter", sans-serif;
         }
         header{
+            width: 100%;
+            height: 113px;
             background: #24204A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex_header{
+            width: 1170px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .flex_header span{
+            color: #E5E5E5;
+            font-size: 20px;
+            font-weight: 700;
+            opacity: 0.6;
+        }
+        nav ul{
+            gap: 64px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .flex_header nav ul li{
+            list-style-type: none;
+        }
+        .flex_header nav ul li a{
+            color: #E5E5E5;
+            font-weight: 500;
+            opacity: 0.6;
+            text-decoration: none;
+        }
+        .top{
+            width: 100%;
+            height: 579px;
+            background: #24204A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex_top{
+            width: 1170px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .description{
+            width: 573px;
+            height: 366px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            /*background: #ffae00;*/
+            margin-top: 85px;
+        }
+        .one_posotion{
+            width: 145px;
+            height: 41px;
+            border-radius: 8px;
+            background: #4B4864;
+            color: #8E88C1;
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 130%; /* 20.8px */
+            letter-spacing: 0.8px;
+        }
+        .description div p{
+            color: #FFF;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+        }
+        .description>p{
+            width: 570px;
+            height: 85px;
+            color: #8E88C1;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 130%; /* 20.8px */
+            letter-spacing: 0.8px;
+        }
+        .about{
+            width: 200px;
+            height: 56px;
+            border: none;
+            border-radius: 8px;
+            background: #3F50E7;
+            /* 1 */
+            box-shadow: 0 6px 20px 0 rgba(0, 255, 224, 0.20);
+            color: #FFF;
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .lamp{
+            width: 375px;
+            height: 411px;
+            border-radius: 8px;
+            background: #827EAC;
+            box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 67px;
+            margin-left: 208px;
+        }
+        .center{
+            width: 100%;
+            height: 764px;
+            background: #071341;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex_center{
+            width: 1170px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        .flex_center_top{
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 85px;
+        }
+        .icon{
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .icon img{
+            width: 56px;
+            height: 56px;
+            border-radius: 8px;
+        }
+        .icon div:last-child{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 18px;
+        }
+        .icon div:last-child span:first-child{
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .icon div:last-child span:last-child{
+            color: #8E88C1;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.8px;
+        }
+        .paragraph_top{
+            width: 1074px;
+            box-sizing: border-box;
+            color: #FFF;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .paragraph_bottom{
+            width: 545px;
+            height: 24px;
+            color: #8E88C1;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.8px;
+            margin-top: 15px;
+            margin-bottom: 58px;
+        }
+        .flex_center_bottom{
+            width: 1170px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box{
+            width: 208px;
+            height: 206px;
+            border-radius: 8px;
+            border: 2px solid #8E88C1;
+            color: #8E88C1;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px; /* 125% */
+            letter-spacing: 0.8px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box img{
+            margin-top: 44px;
+            margin-bottom: 26px;
+        }
+        .box p{
+            width: 178px;
+            height: 60px;
+        }
+        .map{
+            width: 100%;
+            height: 764px;
+        }
+        .map iframe{
+            width: 100%;
+            height: 100%;
+        }
+        footer{
+            width: 100%;
+            height: 94px;
+            background: #071341;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer span{
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
-<header class="tape">
-    
+<header>
+    <div class="flex_header">
+        <span>LOREM</span>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
-<section class="top tape"></section>
-<section class="center tape"></section>
-<iframe src="" frameborder="0"></iframe>
-<footer></footer>
+<section class="top">
+    <div class="flex_top">
+        <div class="description">
+            <button class="one_posotion">One posotion</button>
+            <div>
+                <p>One posotion</p>
+                <p>One posotion</p>
+            </div>
+            <p>One posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotionOne posotion</p>
+            <button class="about">ABOUT</button>
+        </div>
+        <div class="lamp">
+            <img src="pictures_14.2/lamp.png" alt="lamp">
+        </div>
+    </div>
+</section>
+<section class="center">
+    <div class="flex_center">
+        <div class="flex_center_top">
+            <div class="icon">
+                <div>
+                    <img style="background: #FF6853" src="pictures_14.2/entypo_light-down.svg" alt="symbol">
+                </div>
+                <div>
+                    <span>40+</span>
+                    <span>LOREM</span>
+                </div>
+            </div>
+            <div class="icon">
+                <div>
+                    <img style="background: #FF537C" src="pictures_14.2/entypo_light-down.svg" alt="symbol">
+                </div>
+                <div>
+                    <span>40+</span>
+                    <span>LOREM</span>
+                </div>
+            </div>
+            <div class="icon">
+                <div>
+                    <img style="background: #80D2C4" src="pictures_14.2/entypo_light-down.svg" alt="symbol">
+                </div>
+                <div>
+                    <span>240</span>
+                    <span>LOREM</span>
+                </div>
+            </div>
+            <div class="icon">
+                <div>
+                    <img style="background: #3F50E7" src="pictures_14.2/entypo_light-down.svg" alt="symbol">
+                </div>
+                <div>
+                    <span>240</span>
+                    <span>LOREM</span>
+                </div>
+            </div>
+            <div class="icon">
+                <div>
+                    <img style="background: #95CB7C" src="pictures_14.2/entypo_light-down.svg" alt="symbol">
+                </div>
+                <div>
+                    <span>240</span>
+                    <span>LOREM</span>
+                </div>
+            </div>
+        </div>
+        <p class="paragraph_top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda distinctio earum eos eveniet illum, possimus quis reiciendis </p>
+        <p class="paragraph_bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam </p>
+        <div class="flex_center_bottom">
+            <div class="box">
+                <img src="pictures_14.2/entypo_light-down_more_size.svg" alt="symbol">
+                <p>One posotionOne posotionOne posotion</p>
+            </div>
+            <div class="box">
+                <img src="pictures_14.2/entypo_light-down_more_size.svg" alt="symbol">
+                <p>One posotion</p>
+            </div>
+            <div class="box">
+                <img src="pictures_14.2/entypo_light-down_more_size.svg" alt="symbol">
+                <p>One posotion</p>
+            </div>
+            <div class="box">
+                <img src="pictures_14.2/entypo_light-down_more_size.svg" alt="symbol">
+                <p>One posotionOne posotionOne posotion</p>
+            </div>
+            <div class="box">
+                <img src="pictures_14.2/entypo_light-down_more_size.svg" alt="symbol">
+                <p>One posotionOne posotionOne posotion</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2542.9529617277235!2d30.514196376554526!3d50.40471422158347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LzQtdGC0YDQviDQtNC10LzRltGX0LLRgdGM0LrQsA!5e0!3m2!1suk!2sua!4v1721892839190!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<footer>
+    <span>© One posotion”</span>
+</footer>
 </body>
 </html>
