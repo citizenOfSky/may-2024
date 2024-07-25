@@ -6,27 +6,237 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            background-color: #F7F6F4;
+        }
+        .tape{
+            width: 1110px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            background-color: #ffae00;
+        }
+        header{
+            width: 100%;
+            height: 160px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        header>img{
+            margin-top: 42px;
+            margin-right: 186px;
+        }
+        nav ul{
+            width: 445px;
+            height: 34px;
+            margin-top: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav>ul>li{
+            gap: 40px;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+            font-family: "Taviraj", serif;
+            font-size: 20px;
+        }
+        nav>ul>li>ul{
+            padding: 15px 41px 23px 20px;
+        }
+        .top{
+            width: 1110px;
+            height: 505px;
+            background: #F1DDC9;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .description{
+            height: 505px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 56px;
+        }
+        .description p:first-child{
+            width: 420px;
+            height: 160px;
+            color: #333;
+            font-family: "Taviraj", serif;
+            line-height: 80px; /* 133.333% */
+            letter-spacing: 1.2px;
+            font-size: 60px;
+            margin-top: 56px;
+        }
+        .description p:nth-child(2){
+            width: 529px;
+            height: 66px;
+            color: #333;
+            font-family: "Nunito", sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.48px;
+            margin-top: 32px;
+        }
+        .top button{
+            width: 208px;
+            height: 62px;
+            border: none;
+            background: #D84727;
+            color: #FFF;
+            font-family: "Taviraj", serif;
+            font-size: 20px;
+            letter-spacing: 0.4px;
+            margin-top: 79px;
+        }
+        .middle{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .middle>p{
+            /*width: 259px;*/
+            /*height: 40px;*/
+            color: #333;
+            font-family: "Taviraj", serif;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 40px; /* 111.111% */
+            letter-spacing: 0.72px;
+            margin-top: 79px;
+        }
+        .monthly_deals{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 129px;
+        }
+        .card{
+            width: 255px;
+            height: 278px;
+            background-color: white;
+        }
+        .card p{
+            color: #333;
+            font-family: "Taviraj", serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px; /* 133.333% */
+            margin-left: 24px;
+            margin-bottom: 33px;
+        }
+        .bottom{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .bottom p:nth-child(1){
+            color: #333;
+            font-family: "Taviraj", serif;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 40px; /* 111.111% */
+            letter-spacing: 0.72px;
+            margin-top: 132px;
+        }
+        .bottom p:nth-child(2){
+            color: #777;
+            font-family: "Taviraj", serif;
+            font-size: 20px;
+            line-height: 40px; /* 200% */
+            letter-spacing: 0.4px;
+            margin-top: 181px
+        }
+        .bottom p:nth-child(3){
+            width: 350px;
+            height: 96px;
+            color: #333;
+            font-family: "Taviraj", serif;
+            font-size: 36px;
+            line-height: 48px; /* 133.333% */
+            letter-spacing: 0.72px;
+            margin-top: 16px
+        }
+
+    </style>
 </head>
 <body>
-<header>
-    <img src="pictures/image_5.png" alt="icon">
-    <nav>
-        <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </li>
-            <li><a href="#"></a></li>
-        </ul>
-
-
-    </nav>
-</header>
-
+<div class="tape">
+    <header>
+        <img src="pictures/image_5.png" alt="icon">
+        <nav>
+            <ul>
+                <li><a href="#">Watches</a></li>
+                <li><a href="#">Eyewear</a></li>
+                <li><a href="#">Accessories</a>
+<!--                    <ul>-->
+<!--                        <li><a href="#">Fashion</a></li>-->
+<!--                        <li><a href="#">Electronic</a></li>-->
+<!--                        <li><a href="#">Home</a></li>-->
+<!--                    </ul>-->
+                </li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="top">
+        <img src="pictures/imag_6.png" alt="watch">
+        <div class="description">
+            <p>WAY KAMBAS MINI EBONY</p>
+            <p>MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino's skin.</p>
+            <button>Add to cart</button>
+        </div>
+    </section>
+    <section class="middle">
+        <p>Monthly Deals</p>
+        <div class="monthly_deals">
+            <div class="card">
+                <img src="pictures/image_9.png" alt="watch">
+                <p>Singo Maple</p>
+            </div>
+            <div class="card">
+                <img src="pictures/image_10.png" alt="watch">
+                <p>Singo Ebony</p>
+            </div>
+            <div class="card">
+                <img src="pictures/image_11.png" alt="watch">
+                <p>Rakai Ebony</p>
+            </div>
+            <div class="card">
+                <img src="pictures/image_12.png" alt="watch">
+                <p>Way Kambas</p>
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+        <p>Recent News</p>
+        <p>Where To Travel</p>
+        <p>Matoa Where To Travel? Yogyakarta</p>
+        <img src="pictures/image_13.png" alt="watch">
+    </section>
+</div>
 </body>
 </html>
