@@ -1,0 +1,52 @@
+@media screen and (min-width: 0) and (max-width: 480px){
+    /*body{*/
+    /*    */
+    /*}*/
+    header {
+        /*width: 100%;*/
+        height: 20vh;
+        background: #065c06;
+    }
+    .flex{
+        /*width: 100%;*/
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        height: 60vh;
+    }
+    .top{
+        width: 100%;
+        height: 40vh;
+        background: #071341;
+    }
+    .bottom{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+    }
+    .left{
+        width: 33.33%;
+        height: 20vh;
+        background: #e0a710;
+    }
+    .middle{
+        width: 33.33%;
+        height: 20vh;
+        background: #ff790b;
+    }
+    .right{
+        width: 33.34%;
+        height: 20vh;
+        background: #114559;
+    }
+    article{
+        width: 100%;
+        height: 20vh;
+        background: rgba(57, 116, 222, 0.7);
+    }
+}

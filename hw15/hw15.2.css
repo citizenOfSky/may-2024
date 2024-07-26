@@ -20,15 +20,15 @@ header{
     width: 75vw;
     height: 100%;
 }
-.bottom{
-    width: 100%;
-    height: 50%;
-    display: flex;
-}
 .top{
     width: 100%;
     height: 50%;
     background: #071341;
+}
+.bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
 }
 .left{
     width: 33.33%;
