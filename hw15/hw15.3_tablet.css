@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) and (max-width: 1280px){
+    header ul li a{
+        font-size: 20px;
+    }
+    .content{
+        display: flex;
+    }
+    .top{
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+    .bottom{
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+}
