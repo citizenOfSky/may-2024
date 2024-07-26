@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 33vh;
+    background: #e0a710;
+}
+.flex{
+    width: 100%;
+    height: 67vh;
+    display: flex;
+}
+section{
+    width: 75vw;
+    height: 100%;
+    background: #058f8b;
+}
+article{
+    width: 25vw;
+    height: 100%;
+    background: #4B4864;
+}

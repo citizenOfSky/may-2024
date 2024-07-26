@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 33vh;
+    background: #065c06;
+}
+.flex{
+    width: 100%;
+    height: 67vh;
+    display: flex;
+}
+.content{
+    width: 75vw;
+    height: 100%;
+}
+.bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.top{
+    width: 100%;
+    height: 50%;
+    background: #071341;
+}
+.left{
+    width: 33.33%;
+    height: 100%;
+    background: #e0a710;
+}
+.middle{
+    width: 33.33%;
+    height: 100%;
+    background: #ff790b;
+}
+.right{
+    width: 33.34%;
+    height: 100%;
+    background: #114559;
+}
+article{
+    width: 25vw;
+    height: 100%;
+    background: rgba(57, 116, 222, 0.7);
+}
