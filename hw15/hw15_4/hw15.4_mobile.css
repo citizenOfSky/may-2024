@@ -1,3 +1,39 @@
 @media screen and (min-width: 0) and (max-width: 768px){
-
+    .flex{
+        width: 343px;
+        height: 583px;
+        gap: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header{
+        width: 100%;
+    }
+    .content{
+        width: 343px;
+        height: 366px;
+        gap: 16px;
+    }
+    .content h2 {
+        font-size: 32px;
+    }
+    .list{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 30px;
+    }
+    section ul{
+        font-size: 18px;
+    }
+    .content>button{
+        margin-top: 0;
+    }
+    iframe{
+        width: 343px;
+        height: 193px;
+    }
 }

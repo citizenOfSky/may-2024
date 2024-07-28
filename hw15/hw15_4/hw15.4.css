@@ -19,7 +19,7 @@ body{
     justify-content: center;
     align-items: flex-start;
 }
-.left{
+.content{
     width: 578px;
     height: 441px;
     gap: 24px;
@@ -50,13 +50,13 @@ header a{
     color: #6F1DF4;
     border-bottom: 1px solid #6F1DF4;
 }
-.left h2{
+.content h2{
     font-size: 64px;
     font-weight: 700;
     line-height: 120%; /* 76.8px */
 }
 .list{
-    width: 578px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,7 @@ section ul{
     font-size: 24px;
     line-height: 140%; /* 33.6px */
 }
-.left>button{
+.content>button{
     width: 132px;
     height: 56px;
     border-radius: 8px;
