@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    width: 1440px;
+    height: 569px;
+    padding: 64px 32px 64px 32px;
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left{
+    width: 578px;
+    height: 441px;
+    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+header>button{
+    width: 174px;
+    height: 41px;
+    border: none;
+    border-radius: 8px;
+    background: #FF9500;
+    color: #FFF;
+    font-size: 18px;
+}
+header a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #6F1DF4;
+    border-bottom: 1px solid #6F1DF4;
+}
+.left h2{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 120%; /* 76.8px */
+}
+.list{
+    width: 578px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section ul{
+    color: #3C3C43;
+    font-size: 24px;
+    line-height: 140%; /* 33.6px */
+}
+.left>button{
+    width: 132px;
+    height: 56px;
+    border-radius: 8px;
+    background: #6F1DF4;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+iframe{
+    width: 560px;
+    height :315px;
+}
