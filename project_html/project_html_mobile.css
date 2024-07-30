@@ -1,0 +1,120 @@
+@media screen and (max-width: 768px){
+    .background{
+        display: none;
+    }
+    .mobile_background{
+        display: block;
+        width: 320px;
+        height: 823px;
+        position: absolute;
+        z-index: -1;
+    }
+    header{
+        width: 320px;
+        height: 150px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+    .cozy_house {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        width: 320px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content_1 {
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .not_only{
+        width: 300px;
+        height: 296px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 42px;
+        margin: 0;
+    }
+    .not_only p:first-child{
+        width: 300px;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+        padding: 0 50px;
+    }
+    .not_only p:last-of-type{
+        width: 300px;
+        height: 96px;
+        text-align: center;
+    }
+    .content_1>img{
+        width: 260px;
+        height: 272px;
+        margin-left: 40px;
+        margin-top: 105px;
+    }
+    .content_2{
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 42px;
+        margin: 42px 0;
+    }
+    .about_the_shelter{
+        width: 300px;
+        height: 494px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0;
+        gap: 0;
+    }
+    .about_the_shelter p:first-child{
+        width: 300px;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+
+    }
+    .about_the_shelter p:nth-child(2){
+        width: 270px;
+        height: 144px;
+        margin: 25px 0 22px 0;
+        text-align: justify;
+    }
+    .about_the_shelter p:last-child {
+        width: 270px;
+        height: 239px;
+        text-align: justify;
+    }
+    .content_2 img{
+        width: 260px;
+        height: 353.6px;
+        margin: 0;
+    }
+}
+
