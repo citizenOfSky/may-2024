@@ -1,8 +1,8 @@
 @media screen and (max-width: 768px){
-    .background{
+    .background_top{
         display: none;
     }
-    .mobile_background{
+    .mobile_background_top{
         display: block;
         width: 320px;
         height: 823px;
@@ -111,10 +111,179 @@
         height: 239px;
         text-align: justify;
     }
-    .content_2 img{
+    .content_2>img{
         width: 260px;
         height: 353.6px;
         margin: 0;
     }
+    .our_friends section:nth-child(2){
+        display: none;
+    }
+    .our_friends section:nth-child(3){
+        display: none;
+    }
+    .content_3{
+        width: 100%;
+        height: 791px;
+        padding: 0 10px;
+    }
+    .content_3>p{
+        width: 300px;
+        height: 64px;
+        font-size: 25px;
+        margin: 42px 0;
+    }
+    .our_friends {
+        margin: 0;
+    }
+    .content_3>button {
+        margin: 72px 0 84px 0;
+    }
+    .content_4{
+        width: 100%;
+        padding: 0 10px;
+        gap: 42px;
+        margin: 42px 0;
+    }
+    .content_4>p{
+        width: 250px;
+        height: 64px;
+        font-size: 25px;
+    }
+    .help{
+        width: 290px;
+        height: 555px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .top{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .top .block{
+        display: flex;
+    }
+    .bottom{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .bottom .block{
+        display: flex;
+    }
+    .top>.icon:nth-child(even){
+        display: none;
+    }
+    .top>.block:nth-child(even){
+        display: flex;
+    }
+    .bottom>.icon:nth-child(even){
+        display: none;
+    }
+    .bottom>.block:nth-child(even){
+        display: flex;
+    }
+    .icon img{
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+    .icon p{
+        font-size: 15px;
+        line-height: 110%; /* 16.5px */
+        letter-spacing: 0.9px;
+    }
+    .icon{
+        gap: 20px;
+    }
+    .content_5 {
+        width: 100%;
+        height: 542px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 42px;
+        padding: 0 10px;
+    }
+    .donation{
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .donation p:first-child{
+        width: 300px;
+        height: 64px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 130%; /* 32.5px */
+        letter-spacing: 1.5px;
+    }
+    .donation p:nth-of-type(2){
+        width: 273px;
+        height: 24px;
+        text-align: center;
+        line-height: 160%;
+        letter-spacing: normal;
+    }
+    .donation p:last-of-type{
+        text-align: justify;
+    }
+    .content_5>img{
+        width: 260px;
+        height: 135px;
+    }
+    footer {
+        width: 320px;
+        height: 809px;
+        background: none, url("images/mobile_footer-gradient-background.png");
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 10px;
+    }
+    .questions{
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        gap: 40px;
+    }
+    .geolocations{
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        gap: 40px;
+    }
+    footer>img{
+        width: 260px;
+        height: 269px;
+        margin: 0;
+    }
+
 }
 

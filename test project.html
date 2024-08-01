@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 1000px;
+            height: 300px;
+            background: #ffae00;
+            display: flex;
+            position: relative;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            background: red;
+            display: flex;
+            position: absolute;
+        }
+        .down{
+            width: 50px;
+            height: 50px;
+            background: black;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+        }
+        .box .icon:nth-child(3){
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="icon"></div>
+    <div class="icon"></div>
+    <div class="icon"></div>
+    <div class="icon"></div>
+    <div class="icon"></div>
+    <div class="down"></div>
+    <div class="down"></div>
+    <div class="down"></div>
+    <div class="down"></div>
+</div>
+</body>
+</html>
