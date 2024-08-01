@@ -261,29 +261,43 @@
     }
     .questions{
         width: 300px;
-        height: fit-content;
+        /*height: fit-content;*/
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        margin: 0;
-        gap: 40px;
+        margin-top: 30px;
     }
     .geolocations{
         width: 300px;
-        height: fit-content;
+        /*height: fit-content;*/
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        margin: 0;
+        margin-top: 0;
         gap: 40px;
+    }
+    footer section p:first-child{
+        width: 270px;
+        text-align: center;
+        font-size: 25px;
+        line-height: 130%; /* 32.5px */
+        letter-spacing: 1.5px;
+    }
+    .geolocations>.info:first-of-type>p{
+        margin: 0;
+    }
+    .geolocations .info:last-of-type{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     footer>img{
         width: 260px;
         height: 269px;
         margin: 0;
     }
-
 }
 

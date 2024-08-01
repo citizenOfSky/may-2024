@@ -374,12 +374,12 @@ footer{
     width: 302px;
     height: 234px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     margin-top: 56px;
 }
-.footer_head{
+footer section p:first-child{
     color: #FFF;
     font-family: "Georgia", sans-serif;
     font-size: 35px;
@@ -396,6 +396,11 @@ footer{
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+}
+.geolocations>.info:first-of-type>p{
+    margin: 34px 0 37px 0;
+    width: 258px;
+    height: 46px;
 }
 footer>img{
     margin-top: 40px;
