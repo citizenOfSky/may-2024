@@ -253,8 +253,8 @@
         height: 809px;
         background: none, url("images/mobile_footer-gradient-background.png");
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: flex-end;
+        align-items: center;
         flex-direction: column;
         gap: 40px;
         padding: 0 10px;
