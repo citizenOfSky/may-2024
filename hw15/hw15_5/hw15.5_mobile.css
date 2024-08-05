@@ -1,0 +1,28 @@
+@media screen and (min-width: 0) and (max-width: 768px){
+    section{
+        width: 375px;
+        height: 1040px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 32px 0;
+    }
+    .flex div{
+        width: 343px;
+        height: 220px;
+    }
+    .flex div img{
+        width: 128px;
+        height: 128px;
+    }
+    section div p:nth-child(2){
+        margin: 16px 0 8px 0;
+    }
+}

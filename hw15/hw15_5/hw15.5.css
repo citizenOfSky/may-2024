@@ -1,0 +1,41 @@
+body{
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 1440px;
+    height: 408px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.flex div{
+    width: 271px;
+    height: 280px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+section div p:nth-child(2){
+    color: #161543;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    margin: 20px 0 10px 0;
+}
+section div p:nth-child(3){
+    color: #7687A1;
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+    margin: 0;
+}
+.flex{
+    height: 408px;
+    gap: 32px;
+    display: flex;
+}
