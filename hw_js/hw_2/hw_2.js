@@ -317,11 +317,11 @@ else if (num_1===num_2){
 //         (хибноподібні, тобто ті, які приводиться до false, а це 0 null undefined і тд).
 
 {
-    let x = undefined;
+    let x = 2;
     if (x) {
         console.log('true');
     }
-    else if(x !== true ){
+    else {
         console.log('default');
     }
 }
