@@ -1,23 +1,19 @@
+// Тут ті самі завдання, що і в занятті про базові функції, але зробити їх потрібно за допомоги стрілочних функцій
+
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-function squareOfRect(a, b) {
-    return a * b;
-}
-let rect1 = squareOfRect(7,8);
-console.log(rect1)
+let squareOfRect = (a, b) => a * b;
+
+console.log(squareOfRect(7, 8))
 
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
-function squareOfCircle(r) {
-    return Math.PI * r ** 2;
-}
-let circle1 = squareOfCircle(12);
-console.log(circle1)
+let squareOfCircle = (r) => Math.PI * r ** 2;
+
+console.log(squareOfCircle(12))
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
-function squareOfCylinder(r, h) {
-    return 2 * (Math.PI * r ** 2) + 2 * Math.PI * r * h
-}
-let cylinder1 = squareOfCylinder(11, 18);
-console.log(cylinder1);
+let squareOfCylinder = (r, h) => 2 * (Math.PI * r ** 2) + 2 * Math.PI * r * h;
+
+console.log(squareOfCylinder(11, 18));
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 let users = [
@@ -32,22 +28,22 @@ let users = [
     {name: 'Victoria', username: 'malina', password: 6928},
     {name: 'Albina', username: 'volonter', password: 8106},
 ];
-function outputArr() {
+let outputArr = () => {
     for (const user of users) {
         console.log(user)
     }
 }
-outputArr(users)
+outputArr()
 
 // - створити функцію яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумент
-function paragraph(paragraph) {
+let paragraph = (paragraph) => {
     // let p = <p>${paragraph}</p>;
     document.write(`<p>${paragraph}</p>`)
 }
 paragraph('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quis quo!')
 
 // - створити функцію яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
-function outputList(list) {
+let outputList = (list) => {
     document.write(`
         <ul>
             <li>${list}</li>
@@ -60,7 +56,7 @@ outputList('JavaScript')
 
 // - створити функцію яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
-function outputMass(list, amount) {
+let outputMass = (list, amount) => {
     document.write(`<ul>`)
     for (let i = 0; i < amount; i++) {
         // const listElement = list[i];
@@ -74,14 +70,14 @@ outputMass('TypeScript', 12)
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві),
 // та будує для них список (ul li) та виводить його через document.write
 let items = ['html', 'css', true, false, 456, -666];
-function outputArray() {
+let outputArray = () => {
     document.write(`<ul>`)
     for (const item of items) {
         document.write(`<li>${item}</li>`)
     }
     document.write(`</ul>`)
 }
-outputArray()
+outputArray(items)
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age ,
 // та виводить їх в документ. Для кожного об'єкту окремий блок.
@@ -99,7 +95,7 @@ let students = [
     {id: 11, name: 'max', age: 31}
 ]
 
-function group() {
+let group = () =>{
     for (const student of students) {
         document.write(`
             <div>
@@ -108,12 +104,12 @@ function group() {
            `)
     }
 }
-group();
+group()
 
 // - створити функцію яка повертає найменьше число з масиву
 let numbers = [128, 1001, -457, 0, -8888, 100008];
 
-function minNumber() {
+let minNumber = () => {
     let min = numbers[0];
     for (const minN of numbers) {
         if (minN < min) {
@@ -128,7 +124,7 @@ console.log(minNumber())
 
 // - створити функцію sum(arr) яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 let mass = [128, 1001, -457, 0, -8888, 100008];
-function sum(arr) {
+let sum = (arr) => {
     let sum = mass[0]
     for (let i = 1; i < arr.length; i++) {
         sum += arr[i]
@@ -142,7 +138,7 @@ sum(mass)
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 
 let massOfNums = [11,22,33,44]
-function swap(arr, index1, index2) {
+let swap = (arr, index1, index2) => {
     let newIndex = arr[index1];
     arr[index1] = arr[index2];
     arr[index2] = newIndex;
@@ -153,7 +149,7 @@ console.log(singleMass);
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
-function exchange(sumUAH,currencyValues,exchangeCurrency) {
+let exchange = (sumUAH,currencyValues,exchangeCurrency) => {
     if (exchangeCurrency === 'USD' && currencyValues[0].value === 25) {
         return sumUAH / currencyValues[0].value
     }
