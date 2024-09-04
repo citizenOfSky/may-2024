@@ -202,8 +202,8 @@ Car.prototype.changeYear = function (newValue) {
 }
 console.log(car1.changeYear(2023));
 
-Car.prototype.addDriver = function (driverObject) {
-    return this.driver = driverObject;
+Car.prototype.addDriver = function (driver) {
+    return this.driver = driver;
 }
 console.log(car1.addDriver({}));
 
@@ -215,7 +215,7 @@ console.log(car1.addDriver({}));
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 {
-    class Car {
+    class Auto {
 
         constructor(model, producer, yearOfProduction, topSpeed, engineCapacity) {
             this.model = model;
@@ -242,11 +242,11 @@ console.log(car1.addDriver({}));
             this.yearOfProduction = newValue;
         }
 
-        addDriver (driverObject) {
-            this.driver = driverObject;
+        addDriver (driver) {
+            this.driver = driver;
         }
     }
-        car1 = new Car('Audi Q8', 'Volkswagen AG', 2024, 250, 507);
+        car1 = new Auto('Audi Q8', 'Volkswagen AG', 2024, 250, 507);
         console.log(car1)
         car1.drive();
         car1.info();
@@ -267,3 +267,74 @@ class Popelushka{
         this.size = size;
     }
 }
+
+const popelushky = [
+    new Popelushka('popelushka1', 18, 38),
+    new Popelushka('popelushka2', 19, 35),
+    new Popelushka('popelushka3', 20, 36),
+    new Popelushka('popelushka4', 21, 32),
+    new Popelushka('popelushka5', 18, 33),
+    new Popelushka('popelushka6', 19, 31),
+    new Popelushka('popelushka7', 21, 37),
+    new Popelushka('popelushka8', 20, 40),
+    new Popelushka('popelushka9', 18, 39),
+    new Popelushka('popelushka10', 19, 34),
+]
+
+class Prince{
+
+    constructor(name, age, shoe) {
+        this.name = name;
+        this.age = age;
+        this.shoe = shoe;
+    }
+}
+
+const prince = new Prince (name, Prince.age, 34)
+
+for (const popelushka of popelushky) {
+    if (popelushka.size === prince.shoe){
+        prince.princess = popelushka;
+    }
+}
+console.log(prince.princess)
+
+const popelushkaFinder = popelushky.find(popelushka => popelushka.size === prince.shoe);
+prince.princess = popelushkaFinder;
+console.log(popelushkaFinder);
+
+// *Через Array.prototype. створити власний foreach, filter
+Array.prototype.myForEach = function (callback) {
+    const yourArray = this;
+    for (const item of yourArray) {
+        callback(item);
+    }
+};
+[5, 6, 35, 87].myForEach((x) => console.log(x));
+
+Array.prototype.myFilter = function (predicate) {
+    const arr = [];
+    for (const item of this) {
+        if (predicate(item)) {
+            arr.push(item);
+        }
+    }
+    return arr;
+}
+
+let students = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
+
+const result = students.myFilter((student) => student.status);
+console.log(result);

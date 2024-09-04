@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  // function User(name, age) {
+  //   this.name = name;
+  //   this.age = age;
+  // }
+
+  function Customer(name, age, password) {
+    User.apply(this, arguments);
+    this.password = password;
+  }
+
+  let customer = new Customer('vasya', 30, '55555');
+  console.log(customer)
+
+  function User(id, name) {
+      // this = {}
+      this.id = id;
+      this.name = name;
+      this.greeting = function (msg) {
+          console.log(msg  + ' hello ' + this.name);
+
+      };
+      this.sdsfdfhdfh = 10082;
+  }
+
+  User.prototype.sdsfdfhdfh = 10082;
+  User.prototype.foobar = function () {
+      console.log('barfoo');
+  };
+
+  let user1 = new User(1, 'dgdgdgdgd');
+
+  console.log(user1 instanceof User);
+  console.log(user1);
+  console.log({});
+
+  let numbers = [11,22,33];
+  console.log(numbers instanceof Array);
+    Array.prototype.yyy = function () {
+        console.log(this)
+    };
+    numbers.yyy();
+
+  let students = [
+      {name: 'vasya', age: 31, status: false},
+      {name: 'petya', age: 30, status: true},
+      {name: 'kolya', age: 29, status: true},
+      {name: 'olya', age: 28, status: false},
+      {name: 'max', age: 30, status: true},
+      {name: 'anya', age: 31, status: false},
+      {name: 'oleg', age: 28, status: false},
+      {name: 'andrey', age: 29, status: true},
+      {name: 'masha', age: 30, status: true},
+      {name: 'olya', age: 31, status: false},
+      {name: 'max', age: 31, status: true}
+  ];
+  students.yyy()
+
+  function clientFactoryFunction(id, name) {
+      return {
+          id, name
+      }
+  }
+
+  function userFactoryFunction(id, name, password) {
+      return {
+          id, name, password
+      }
+  }
+
+  let userFactoryObject = userFactoryFunction(1, 'kokos' )
+  let client = clientFactoryFunction(1, 'sdssfasf', 64546)
+
+    console.log(userFactoryObject);
+    console.log(client);
+
+    user1.greeting.call(userFactoryObject, 'olla');
+  user1.greeting.apply(userFactoryObject, ['aloha']);
+
+  user1.greeting.bind(userFactoryObject);
+  let greetingClone =  user1.greeting.bind(userFactoryObject);
+  greetingClone('sdfsdsdvdsvdsv');
+  greetingClone('sdfsdsdvdsvdsv');
+  greetingClone('sdfsdsdvdsvdsv');
+  greetingClone('sdfsdsdvdsvdsv');
+
+  function SuperUser(id, name, login, password) {
+      User.apply(this, [id, name]);
+      this.login = login;
+      this.password = password;
+  }
+  let superUser = new SuperUser(111, 'sDfsdf', 'lofin', 'gkfgkfdkgofdkgofd');
+  console.log(superUser)
+//   ПРОПИСАТИ 6 РАЗІВ ДЛЯ СПІВБЕСІДИ !!! - Як реалізувати наслідування, не використовуючи класову
+//   конструкцію? -відповідь: за допомогою підміни контексту. - один із варіантів.
+
+
+
+</script>
+</body>
+</html>
